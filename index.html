@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MIT AI Morning Briefing</title>
+    <meta
+      name="description"
+      content="Accessible morning briefing dashboard for AI innovation, policy, and higher education signals relevant to MIT."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to briefing</a>
+
+    <header class="topbar" aria-label="Dashboard header">
+      <div>
+        <p class="eyebrow">MIT AI Morning Briefing</p>
+        <h1>Signals for AI Innovation</h1>
+      </div>
+      <div class="brief-meta" aria-label="Briefing metadata">
+        <span>July 1, 2026</span>
+        <span>6 items</span>
+        <span>Fresh sources: Jun 29-30</span>
+      </div>
+    </header>
+
+    <main id="main" class="shell">
+      <section class="hero" aria-labelledby="summary-title">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="signal-orbit">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="summary-panel">
+          <p class="eyebrow">Executive Summary</p>
+          <h2 id="summary-title">What changed overnight</h2>
+          <ul class="summary-list">
+            <li>Frontier labs are moving deeper into scientific workflows, raising the bar for research infrastructure decisions.</li>
+            <li>AI policy attention is shifting toward export controls, jailbreak standards, pre-release testing, and sensitive data.</li>
+            <li>Peer universities are favoring practical, hands-on AI literacy models over broad abstract guidance.</li>
+          </ul>
+        </div>
+        <aside class="action-panel" aria-labelledby="actions-title">
+          <p class="eyebrow">Today</p>
+          <h2 id="actions-title">Actions to Consider</h2>
+          <ol class="action-list">
+            <li>Ask research computing and libraries whether AI research workbenches need a common review path.</li>
+            <li>Brief privacy/security teams on health and location data exposure in AI tools.</li>
+            <li>Use MIT’s agentic AI explainer as a shared baseline for fall guidance.</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="controls" aria-label="Briefing filters">
+        <div class="segmented-control" role="group" aria-label="Filter briefing items">
+          <button class="segment active" type="button" aria-pressed="true" data-filter="all">All</button>
+          <button class="segment" type="button" aria-pressed="false" data-filter="AI News">AI News</button>
+          <button class="segment" type="button" aria-pressed="false" data-filter="AI Policy">AI Policy</button>
+          <button class="segment" type="button" aria-pressed="false" data-filter="Higher Ed">Higher Ed</button>
+        </div>
+      </section>
+
+      <section class="briefing-grid" aria-label="Briefing items">
+        <article class="brief-card" data-section="AI News">
+          <div class="card-head">
+            <span class="section-pill news">AI News</span>
+            <time datetime="2026-06-30">Jun 30, 2026</time>
+          </div>
+          <h2>OpenAI Introduced GeneBench-Pro</h2>
+          <p class="fact"><strong>Confirmed:</strong> OpenAI released a computational biology benchmark with 129 problems across genomics, quantitative biology, and translational medicine.</p>
+          <p><strong>Analysis:</strong> AI agents are becoming stronger research assistants, but the reported results still show they are not ready for independent scientific judgment.</p>
+          <p class="mit-impact"><strong>Why this matters for MIT:</strong> Treat AI-for-science claims as measurable but not production-ready without expert validation and reproducibility checks.</p>
+          <a href="https://openai.com/index/introducing-genebench-pro/" target="_blank" rel="noreferrer">Open source</a>
+        </article>
+
+        <article class="brief-card" data-section="AI News">
+          <div class="card-head">
+            <span class="section-pill news">AI News</span>
+            <time datetime="2026-06-30">Jun 30, 2026</time>
+          </div>
+          <h2>Anthropic Launched Claude Science</h2>
+          <p class="fact"><strong>Confirmed:</strong> Anthropic released a beta AI workbench for scientists with research tools, auditable artifacts, HPC/SSH support, and project credits.</p>
+          <p><strong>Analysis:</strong> The product is aimed at academic and nonprofit labs, not only enterprise R&amp;D teams.</p>
+          <p class="mit-impact"><strong>Why this matters for MIT:</strong> Faculty may test these tools quickly, so MIT needs guidance for data handling, lab procurement, and reproducible AI-assisted research.</p>
+          <a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noreferrer">Anthropic source</a>
+        </article>
+
+        <article class="brief-card" data-section="AI Policy">
+          <div class="card-head">
+            <span class="section-pill policy">AI Policy</span>
+            <time datetime="2026-06-30">Jun 30, 2026</time>
+          </div>
+          <h2>Fable/Mythos Export Controls Lifted</h2>
+          <p class="fact"><strong>Confirmed:</strong> Anthropic said U.S. export controls on Fable 5 and Mythos 5 were lifted, with Fable 5 returning globally July 1.</p>
+          <p><strong>Analysis:</strong> Frontier model access can be disrupted by national-security decisions with little operational warning.</p>
+          <p class="mit-impact"><strong>Why this matters for MIT:</strong> Review dependencies on frontier models for research, teaching, and operations, especially with international collaborators.</p>
+          <a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noreferrer">Anthropic source</a>
+        </article>
+
+        <article class="brief-card" data-section="AI Policy">
+          <div class="card-head">
+            <span class="section-pill policy">AI Policy</span>
+            <time datetime="2026-06-29">Jun 29, 2026</time>
+          </div>
+          <h2>Health and Location Data Bill Renewed</h2>
+          <p class="fact"><strong>Confirmed:</strong> Warren and Scanlon announced a renewed bill to restrict data brokers from selling health and location data, including data entered into AI systems.</p>
+          <p><strong>Analysis:</strong> The proposal reflects growing scrutiny of sensitive data placed into AI products.</p>
+          <p class="mit-impact"><strong>Why this matters for MIT:</strong> AI pilots involving health, wellness, mobility, advising, or student-support data need explicit minimization and retention controls.</p>
+          <a href="https://www.warren.senate.gov/newsroom/press-releases/warren-scanlon-to-renew-fight-to-block-greedy-data-brokers-from-selling-americans-personal-health-and-location-information/" target="_blank" rel="noreferrer">Senate source</a>
+        </article>
+
+        <article class="brief-card" data-section="Higher Ed">
+          <div class="card-head">
+            <span class="section-pill higher-ed">Higher Ed</span>
+            <time datetime="2026-06-30">Jun 30, 2026</time>
+          </div>
+          <h2>MIT Published Agentic AI Guidance</h2>
+          <p class="fact"><strong>Confirmed:</strong> MIT’s Phillip Isola described agentic AI as AI that takes actions in digital or physical environments.</p>
+          <p><strong>Analysis:</strong> This is a useful MIT-native reference for separating real agent capabilities from vendor marketing.</p>
+          <p class="mit-impact"><strong>Why this matters for MIT:</strong> Use the explainer to anchor governance for agent pilots in administration, research operations, and teaching tools.</p>
+          <a href="https://news.mit.edu/2026/agentic-ai-and-what-do-we-want-it-be-0630" target="_blank" rel="noreferrer">MIT News source</a>
+        </article>
+
+        <article class="brief-card" data-section="Higher Ed">
+          <div class="card-head">
+            <span class="section-pill higher-ed">Higher Ed</span>
+            <time datetime="2026-06-30">Jun 30, 2026</time>
+          </div>
+          <h2>Santa Clara’s AI Kitchen Model</h2>
+          <p class="fact"><strong>Confirmed:</strong> Santa Clara University runs a weekly hands-on AI workshop for students, faculty, staff, and Silicon Valley professionals.</p>
+          <p><strong>Analysis:</strong> Peer institutions are using low-friction, community-based formats to build AI literacy and belonging.</p>
+          <p class="mit-impact"><strong>Why this matters for MIT:</strong> MIT could adapt a similar studio model through libraries, Open Learning, Schwarzman College, or DLC-based pilots.</p>
+          <a href="https://www.insidehighered.com/news/student-success/college-experience/2026/06/30/inside-universitys-ai-kitchen" target="_blank" rel="noreferrer">Inside Higher Ed source</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Compiled for an AI Innovation Manager at MIT. Confirmed facts are separated from analysis or inference in each item.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
